@@ -74,9 +74,11 @@
     </style>
 </head>
 <body>
+     
     <div class="login-container">
         <h1>Cadastro</h1>
-        <form id="cadastro-form" action="" method="POST">
+        <form id="cadastro-form" action="registrar.php" method="POST">
+           
             <label for="nome_completo">Nome Completo:</label>
             <input type="text" id="nome_completo" name="nome_completo" required>
             
@@ -93,38 +95,34 @@
             <input type="tel" id="telefone" name="telefone" required>
             
             <label for="cep">CEP:</label>
-            <input type="text" id="cep" name="cep" required>
+            <input type="tel" id="cep" name="cep" required>
             
             <label for="endereco_entrega">Endereço de Entrega:</label>
             <input type="text" id="endereco_entrega" name="endereco_entrega" required>
             
             <label for="tipo_residencia">Tipo de Residência:</label>
-            <select id="tipo_residencia" name="tipo_residencia" required>
-                <option value="apartamento">Apartamento</option>
-                <option value="condominio">Condomínio</option>
-                <option value="casa">Casa</option>
-            </select>
-            
-            <input class="btn" type="submit" name="register" value="Enviar">
+            <input type="text" id="tipo_residencia" name="tipo_residencia" required>
+            <input class="btn" type="submit" name="registro" value="Enviar">
+    
         </form>
     </div>
-
+    
     <script>
         document.getElementById("cadastro-form").addEventListener("submit", function(event) {
             event.preventDefault(); // Impede o envio padrão do formulário
             
             // Obter valores dos campos do formulário
-            const nome = document.getElementById("nome_completo").value;
+            const nome_completo = document.getElementById("nome_completo").value;
             const email = document.getElementById("email").value;
             const senha = document.getElementById("senha").value;
-            const confirmarSenha = document.getElementById("confirmar_senha").value;
+            const confirmar_senha = document.getElementById("confirmar_senha").value;
             const telefone = document.getElementById("telefone").value;
             const cep = document.getElementById("cep").value;
-            const endereco = document.getElementById("endereco_entrega").value;
-            const tipoResidencia = document.getElementById("tipo_residencia").value;
+            const endereco_entrega = document.getElementById("endereco_entrega").value;
+            const tipo_residencia = document.getElementById("tipo_residencia").value;
             
             // Verificar se as senhas coincidem
-            if (senha !== confirmarSenha) {
+            if (senha !== confirmar_senha) {
                 alert("As senhas não coincidem. Por favor, tente novamente.");
                 return;
             }
