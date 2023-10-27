@@ -26,18 +26,15 @@ if (isset($_POST['registro'])) {
                 VALUES('$nome_completo', '$email', '$senha', '$confirmar_senha', '$telefone', '$cep', '$endereco_entrega', '$tipo_residencia', '$fecha')";
             $resultado = mysqli_query($conex, $consulta);
             if ($resultado) {
-                ?>
-                <h3 class="sucess" >Seu registro está completo</h3>
-                <?php
+                
+                echo "Inserção bem-sucedida!";
             } else {
-                ?>
-                <h3 class="error">Ocorreu um erro</h3>
-                <?php
-            }
-        } else {
-            ?>
-            <h3 class="error">Preencha todos os campos</h3>
-            <?php
-        } 
+
+                echo "Erro MySQL: " . mysqli_error($conex);
+        }
+    } else {
+
+        echo "Preencha todos os campos obrigatórios";
+    }
 }
 ?>
