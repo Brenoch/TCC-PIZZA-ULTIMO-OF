@@ -1,0 +1,29 @@
+ <script>
+        document.getElementById("cadastro-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+            
+            // Obter valores dos campos do formulário
+            const nome = document.getElementById("nome_completo").value;
+            const email = document.getElementById("email").value;
+            const senha = document.getElementById("senha").value;
+            const confirmarSenha = document.getElementById("confirmar_senha").value;
+            const telefone = document.getElementById("telefone").value;
+            const cep = document.getElementById("cep").value;
+            const endereco = document.getElementById("endereco_entrega").value;
+            const tipoResidencia = document.getElementById("tipo_residencia").value;
+            
+            // Verificar se as senhas coincidem
+            if (senha !== confirmarSenha) {
+                alert("As senhas não coincidem. Por favor, tente novamente.");
+                return;
+            }
+            
+            // Você pode adicionar mais lógica aqui para processar os dados, enviar para o servidor, etc.
+            
+            // Armazenar o status de login no localStorage
+            localStorage.setItem("usuarioCadastrado", "true");
+            
+            // Redirecionar para a página de boas-vindas após o cadastro
+            window.location.href = "login.html"; 
+        });
+    </script>

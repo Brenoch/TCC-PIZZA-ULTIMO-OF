@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+      body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('https://images.pexels.com/photos/3944308/pexels-photo-3944308.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ff6f00;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            text-align: left;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        select {
+            appearance: none;
+            padding: 8px;
+        }
+
+        button[type="submit"] {
+            background-color: #ff6f00;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #ff9000;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form action="testLogin.php" method="POST">
+            <label for="email">Endereço de E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+            
+            <input id="btn" type="submit" name="submit" value="Enviar"><br /><br />
+        </form>
+        
+        <p><a href="esqueceu-senha.html">Esqueceu a senha?</a></p>
+    </div>
+
+    <p style="text-align: justify;"><a href="cadastro.html"></a></p> 
+    
+
+    <script>
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+            
+            // Obter valores dos campos do formulário
+            const email = document.getElementById("email").value;
+            const senha = document.getElementById("senha").value;
+            
+            // Verificar se os dados de login estão corretos (exemplo simplificado)
+            if (email === "seu-email@pizzaria.com" && senha === "senha123") {
+                // Armazenar o status de login no localStorage
+                localStorage.setItem("usuarioLogado", "true");
+                
+                // Redirecionar para a página de boas-vindas
+                window.location.href = "index.html"; // Substitua pelo URL da página desejada
+            } else {
+                alert("Credenciais inválidas. Por favor, tente novamente.");
+            }
+        });
+        
+        // Verificar se o usuário já está logado ao carregar a página
+        window.addEventListener("load", function() {
+            const usuarioLogado = localStorage.getItem("usuarioLogado");
+            if (usuarioLogado === "true") {
+                window.location.href = "index.html"; // Substitua pelo URL da página desejada
+            }
+        });
+    </script>
+</body>
+</html>
