@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>La Fornitura|Pizzaria</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <style>
+
+.icons button:hover {
+    color: #f00; /* Cor do ícone ao passar o mouse */
+  }
+
+  .icons button span {
+    font-size: 1.2rem; /* Tamanho do texto ao lado do ícone */
+  }
+
+  @media screen and (max-width: 768px) {
+    .navbar {
+      display: none;
+    }
+
+    .menu-toggle {
+      display: block;
+    }
+
+    .menu-items {
+      display: none;
+    }
+
+    .menu-items.show {
+      display: block;
+    }
+  }
+
+    /* Reset de estilos padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos para o corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Estilos para o título */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilos para o formulário */
+form {
+  padding: 90px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para as labels dos campos */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Estilos para os inputs */
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Estilos para o botão */
+
+button{
+  padding: 10px;
+  border: none;
+  background-color: #ff5722;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #f44336;
+}
+
+
+  </style>
+
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><span class="flaticon-pizza-1 mr-1"></span>Pizzaria<br><small>La Fornitura</small></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+      <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item "><a href="index.html" class="nav-link">Inicio</a></li>
+              <li class="nav-item "><a href="menu2.html" class="nav-link">Menu</a></li>
+              <li class="nav-item active"><a href="menu.html" class="nav-link">Comprar</a></li>
+              <li class="nav-item"><a href="services.html" class="nav-link">Serviços</a></li>
+              <li class="nav-item"><a href="about.html" class="nav-link">Sobre</a></li>
+          </ul>
+              <div class="user-icon" id="user-icon">
+                  
+                <img src="images/icons8-login-arredondado-à-direita-67 (1).png" alt="Usuário Logado" height="25px">
+                  
+              </div>
+            </ul>
+      </div>
+    </div>
+  </nav>
+
+    <br><br><br><br>
+
+    <h1 class="text-center">Faça Seu Pedido</h1>
+
+    <form class=" text-center " action="https://formsubmit.co/pizzarialafornitura@gmail.com" method="POST">
+
+      <label for="sabor">Escolha o sabor:</label>
+  <select id="sabor" name="sabor">
+    <option value="metade">Metade (especifique em obs)</option>
+    <option value="calabresa">Calabresa</option>
+    <option value="mussarela">Mussarela</option>
+    <option value="frango_catupiry">Frango com Catupiry</option>
+    <option value="napolitana">Napolitana</option>
+    <option value="marguerita">Marguerita</option>
+    <option value="chocolate">Chocolate</option>
+    <option value="romeu_julieta">Romeu e Julieta</option>
+    <option value="banana_nevada">Banana com canela</option>                                                                                                                                                                                                  </select>
+
+    <br><br>
+
+  <label for="tamanho">Escolha o tamanho:</label>
+  <select id="tamanho" name="tamanho">
+    <option value="broto">Broto (20cm)</option>
+    <option value="media">Média (30cm)</option>
+    <option value="familia">Família (40cm)</option>
+    <option value="grande">Grande (50cm)</option>
+    <option value="big">Big (60cm)</option>  </select>
+
+  <br><br>
+
+  <label for="endereco">Endereço:</label>
+  <input type="text" id="endereco" name="endereco">
+
+  <br><br>
+
+  <label for="cep">CEP:</label>
+  <input type="text" id="cep" name="cep">
+
+  <br><br>
+
+  <label for="nome">Nome:</label>
+  <input type="text" id="nome" name="nome">
+
+  <br><br>
+
+  <label for="tipo_residencia">Tipo de Residência:</label>
+  <select id="tipo_residencia" name="tipo_residencia">
+    <option value="casa">Casa</option>
+    <option value="apartamento">Apartamento</option>
+    <option value="condominio">Condomínio</option>
+  </select>
+
+  <br><br>
+
+  <div id="campos_residencia">
+    <!-- Campos adicionais com base na escolha do tipo de residência -->
+  </div>
+
+  <br><br>
+
+  <label for="observacao">Observação:</label><br>
+  <textarea id="observacao" name="observacao" rows="4" cols="50"></textarea>
+
+  <br><br>
+
+
+ <button onclick="abrirAlerta()">Enviar Pedido</button>
+  <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+  <input type="hidden" name="_subject" value="Pizzaria!">
+  <input type="hidden" name="_captcha" value="false">
+
+
+
+
+  <script src="js/menu.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</form>
+</body>
+
+<script>
+
+  </script>
+</head>
+</html>
