@@ -1,0 +1,307 @@
+.headerse{
+    position: fixed;
+    top:0; left:0; right:0;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    z-index: 1000;
+ }
+
+.header .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+ }
+
+ .header .flex .logo{
+    font-size: 2.5rem;
+    color:var(--black);
+ }
+
+ .header .flex .navbar a{
+    margin:0 1rem;
+    font-size: 2.2rem;
+    color:var(--black);
+ }
+
+ .header .flex .navbar a:hover{
+    text-decoration: underline;
+    color:var(--red);
+ }
+
+ .header .flex .icons div{
+    font-size: 2.5rem;
+    color:var(--light-color);
+    cursor: pointer;
+    margin-left: 1.7rem;
+ }
+
+ .header .flex .icons div:hover{
+    color:var(--red);
+ }
+
+ .header .flex .icons div span{
+    font-size: 2rem;
+ }
+
+ @media screen and (max-width: 768px) {
+    .navbar {
+      display: none;
+      /* Esconda a barra de navegação */
+    }
+    .icons {
+      display: block;
+      /* Mostre os ícones */
+    }
+    #menu-btn {
+      display: block;
+      /* Mostre o ícone de menu */
+    }
+  }
+
+ /* Estilos para tornar responsivo */
+ @media screen and (max-width: 768px) {
+    .navbar {
+      display: none;
+      /* Esconder a barra de navegação padrão */
+    }
+    .menu-toggle {
+      display: block;
+      /* Mostrar o botão de menu */
+    }
+    .menu-items {
+      display: none;
+      /* Esconder itens do menu por padrão */
+    }
+    .menu-items.show {
+      display: block;
+      /* Mostrar itens do menu quando o botão é clicado */
+    }
+  }
+
+    .logo {
+    margin-right: 20px;
+    /* Espaçamento do logo */
+  }
+  .icons {
+    display: flex;
+    align-items: center;
+  }
+  .icons div {
+    margin-right: 10px;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff; /* Cor de fundo do header */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra no header */
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px; /* Espaçamento interno do header */
+
+
+  }
+
+  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /* Espaçamento do header */
+  }
+
+
+  .logo img {
+    height: 60px; /* Altura da logo */
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Espaçamento entre os links */
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: #333; /* Cor dos links */
+    font-size: 1.2rem; /* Tamanho da fonte dos links */
+    transition: color 0.3s ease;
+  }
+
+  .navbar a:hover {
+    color: #f00; /* Cor dos links ao passar o mouse */
+  }
+
+  .icons button {
+    font-size: 1.5rem; /* Tamanho do ícone do carrinho e botões */
+    color: #888; /* Cor dos ícones */
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Espaçamento entre ícone e texto */
+  }
+
+  .icons button:hover {
+    color: #f00; /* Cor do ícone ao passar o mouse */
+  }
+
+  .icons button span {
+    font-size: 1.2rem; /* Tamanho do texto ao lado do ícone */
+  }
+
+  @media screen and (max-width: 768px) {
+    .navbar {
+      display: none;
+    }
+
+    .menu-toggle {
+      display: block;
+    }
+
+    .menu-items {
+      display: none;
+    }
+
+    .menu-items.show {
+      display: block;
+    }
+  }
+    /* Estilo para transformar o ícone do carrinho em um botão */
+    .icons button {
+      font-size: 2.5rem;
+      color: var(--light-color);
+      cursor: pointer;
+      margin-left: 1.7rem;
+      border: none;
+      background: none;
+      padding: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .icons button:hover {
+      color: var(--red);
+    }
+
+    .icons button span {
+      font-size: 2rem;
+    }
+
+    /* Estilo para o carousel */
+    .carousel {
+      margin-top: 60px; /* Ajuste o espaço acima do carousel conforme necessário */
+    }
+
+
+    /* Estilos adicionais */
+    .container {
+      padding: 20px;
+    }
+
+    .section {
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
+    .menu-item {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+    }
+
+    .menu-item img {
+      max-width: 100px;
+      margin-right: 20px;
+    }
+
+    .menu-item-content {
+      flex: 1;
+    }
+
+    /* Estilos para formulário de pedido */
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    form label,
+    form input {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="tel"],
+    form textarea {
+      width: 100%;
+      padding: 8px;
+      font-size: 1rem;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+    }
+
+    form input[type="submit"] {
+      background-color: #f00;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+    .user-icon img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+
+    .user-options {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .user-icon:hover .user-options {
+      display: block;
+    }
+
+    .user-options a {
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .user-options a:hover {
+      background-color: #f1f1f1;
+    }
+
