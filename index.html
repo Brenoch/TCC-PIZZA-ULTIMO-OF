@@ -23,6 +23,10 @@
     <link rel="stylesheet" href="css/style.css">
 
   </head>
+  <style>
+
+
+  </style>
   <body>
   	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
@@ -31,17 +35,20 @@
 		        <span class="oi oi-menu"></span> Menu
 		      </button>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav ml-auto">
-
-	          <li class="nav-item active"><a href="#" class="nav-link">Inicio</a></li>
-	          <li class="nav-item"><a href="menu2.html" class="nav-link">Menu</a></li>
-	          <li class="nav-item"><a href="menu.html" class="nav-link">Comprar</a></li>
-			<li class="nav-item"><a href="services.html" class="nav-link">Serviços</a></li>
-	          <li class="nav-item"><a href="about.html" class="nav-link">Sobre</a></li>
-              <div class="user-icon" id="user-icon">
-                <img src="images/icons8-login-arredondado-à-direita-67 (1).png" alt="User Photo" height="35px">
-				<img src="images/branquelo.png" alt="User Photo" height="35px">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a href="#" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="menu2.html" class="nav-link">Menu</a></li>
+                <li class="nav-item"><a href="menu.html" class="nav-link">Comprar</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link">Serviços</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">Sobre</a></li>
             </ul>
+                <div class="user-icon" id="user-icon">
+                    <a href="logar.html">
+                  <img src="images/icons8-login-arredondado-à-direita-67 (1).png" alt="User Photo" height="25px">
+                  <img class="branquelo-image" src="images/branquelo.png" alt="User Photo" height="25px">
+                    </a>
+                </div>
+              </ul>
 	      </div>
 		  </div>
 	  </nav>
@@ -172,7 +179,7 @@
     		<div class="row no-gutters d-flex">
     			<div class="col-lg-4 d-flex ftco-animate">
     				<div class="services-wrap d-flex">
-    					<a href="#" class="img" style="background-image: url(images/pizzas/ada34cd2101afafaba465aad112ee3c1_XL.jpg);"></a>
+    					<a href="#" class="img" style="background-image: url(images/pizzas/pizzaruim.png);"></a>
     					<div class="text p-4">
     						<h3>Nome Pizza</h3>
     						<p>Descrição do produto</p>
@@ -362,7 +369,10 @@
     			<div class="col-md-6 d-flex align-self-stretch">
     				<div id="map"></div>
     			</div>
+
 	    		<div class="col-md-6 appointment ftco-animate">
+                    <form class=" text-center " action="https://formsubmit.co/pizzarialafornitura@gmail.com" method="POST">
+
 	    			<h3 class="mb-3">Contate nos</h3>
 	    			<form action="#" class="appointment-form">
 	    				<div class="d-md-flex">
@@ -378,8 +388,12 @@
 	    				<div class="form-group">
 	              <textarea name="" id="" cols="30" rows="3" class="form-control" placeholder="Mensagem"></textarea>
 	            </div>
+                <input type="hidden" name="_subject" value="Pizzaria!">
+  <input type="hidden" name="_captcha" value="false">
+
 	            <div class="form-group">
 	              <input type="submit" value="Enviar" class="btn btn-primary py-3 px-4">
+
 	            </div>
 	    			</form>
 	    		</div>
@@ -405,7 +419,7 @@
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Ultimas postagens</h2>
               <div class="block-21 mb-4 d-flex">
-                <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
+                <a class="blog-img mr-4" style="background-image: url(images/Imagem\ do\ WhatsApp\ de\ 2023-11-22\ à\(s\)\ 04.27.32_3ec2c10a.jpg);"></a>
                 <div class="text">
                   <h3 class="heading"><a href="https://www.instagram.com/p/Cz2b3r7uZCv/">Domingou com pizza</a></h3>
                   <div class="meta">
@@ -416,7 +430,7 @@
                 </div>
               </div>
               <div class="block-21 mb-4 d-flex">
-                <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
+                <a class="blog-img mr-4" style="background-image: url(images/Imagem\ do\ WhatsApp\ de\ 2023-11-22\ à\(s\)\ 04.28.02_c7684557.jpg);"></a>
                 <div class="text">
                   <h3 class="heading"><a href="https://www.instagram.com/p/Czv1ygnucl3/">Descubra uma explosão de sabores na nossa pizzaria!</a></h3>
                   <div class="meta">
